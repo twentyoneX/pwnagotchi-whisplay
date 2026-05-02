@@ -4,6 +4,7 @@ import numpy as np
 import pwnagotchi.ui.fonts as fonts
 from pwnagotchi.ui.hw.base import DisplayImpl
 
+
 class Whisplay(DisplayImpl):
     def __init__(self, config):
         super(Whisplay, self).__init__(config, 'whisplay')
@@ -14,18 +15,18 @@ class Whisplay(DisplayImpl):
         self._layout['width'] = 280
         self._layout['height'] = 240
         self._layout['face'] = (0, 50)
-        self._layout['name'] = (5, 2)
-        self._layout['channel'] = (0, 0)
-        self._layout['aps'] = (30, 0)
-        self._layout['uptime'] = (185, 0)
-        self._layout['line1'] = [0, 14, 280, 14]
+        self._layout['name'] = (20, 2)
+        self._layout['channel'] = (20, 16)
+        self._layout['aps'] = (55, 16)
+        self._layout['uptime'] = (190, 16)
+        self._layout['line1'] = [0, 30, 280, 30]
         self._layout['line2'] = [0, 218, 280, 218]
         self._layout['friend_face'] = (0, 140)
         self._layout['friend_name'] = (40, 142)
-        self._layout['shakes'] = (5, 220)
-        self._layout['mode'] = (235, 220)
+        self._layout['shakes'] = (20, 220)
+        self._layout['mode'] = (220, 220)
         self._layout['status'] = {
-            'pos': (140, 50),
+            'pos': (160, 80),
             'font': fonts.status_font(fonts.Small),
             'max': 18
         }
@@ -40,7 +41,8 @@ class Whisplay(DisplayImpl):
 
     def render(self, canvas):
         logging.info(f"Canvas size: {canvas.size} mode: {canvas.mode}")
-        img = canvas.convert('RGB')
+        img = canvas.convert('RGB').resize((280, 240))
+        img = img.rotate(90, expand=True)
         pixel_data = []
         for y in range(280):
             for x in range(240):
