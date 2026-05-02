@@ -11,7 +11,7 @@ custom_plugins = "/usr/local/share/pwnagotchi/custom-plugins/"
 enabled = true
 scale = "celsius"
 orientation = "horizontal"
-position = "200, 185"
+position = "180, 185"
 
 [main.plugins.bt-tether]
 enabled = false
