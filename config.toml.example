@@ -1,0 +1,53 @@
+[main]
+name = "pwnagotchi"
+lang = "en"
+iface = "wlan0mon"
+mon_start_cmd = "/usr/bin/monstart"
+mon_stop_cmd = "/usr/bin/monstop"
+whitelist = []
+custom_plugins = "/usr/local/share/pwnagotchi/custom-plugins/"
+
+[main.plugins.memtemp]
+enabled = true
+scale = "celsius"
+orientation = "horizontal"
+position = "200, 185"
+
+[main.plugins.bt-tether]
+enabled = false
+phone-name = "YOUR_PHONE_NAME"
+mac = "YOUR_PHONE_MAC"
+phone = "ios"
+ip = "172.20.10.6"
+gateway = "172.20.10.1"
+dns = "8.8.8.8 1.1.1.1"
+
+[main.plugins.pisugarx]
+enabled = false
+rotation = false
+default_display = "percentage"
+lowpower_shutdown = true
+lowpower_shutdown_level = 10
+
+[main.plugins.webcfg]
+enabled = true
+
+[main.plugins.whisplay_led]
+enabled = true
+
+[main.plugins.handshakes-dl]
+enabled = true
+
+[ui]
+fps = 1
+
+[ui.display]
+enabled = true
+type = "whisplay"
+color = "rgb"
+rotation = 0
+xres = 240
+yres = 280
+
+[bettercap]
+handshakes = "/home/pi/handshakes"
