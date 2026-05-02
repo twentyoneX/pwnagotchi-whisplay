@@ -14,7 +14,7 @@ class Whisplay(DisplayImpl):
         fonts.setup(10, 9, 10, 35, 25, 9)
         self._layout['width'] = 280
         self._layout['height'] = 240
-        self._layout['face'] = (0, 50)
+        self._layout['face'] = (0, 100)
         self._layout['name'] = (20, 2)
         self._layout['channel'] = (20, 16)
         self._layout['aps'] = (55, 16)
