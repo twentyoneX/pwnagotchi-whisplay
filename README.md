@@ -4,6 +4,12 @@ Display driver and RGB LED plugin for running [jayofelony's Pwnagotchi](https://
 
 ---
 
+## Preview
+
+*Photo coming soon*
+
+---
+
 ## Hardware
 
 | Component | Details |
@@ -83,8 +89,10 @@ enabled = true
 enabled = true
 scale = "celsius"
 orientation = "horizontal"
-position = "200, 185"
+position = "180, 185"
 ```
+
+See `config.toml.example` for a full example config.
 
 ### Step 5 — Restart Pwnagotchi
 
@@ -117,6 +125,7 @@ The `whisplay_led` plugin controls the RGB LED on the Whisplay board:
 pwnagotchi-whisplay/
 ├── README.md
 ├── install.sh
+├── config.toml.example
 ├── hw/
 │   ├── whisplay.py                   # Display driver
 │   └── libs/
