@@ -51,3 +51,8 @@ yres = 280
 
 [bettercap]
 handshakes = "/home/pi/handshakes"
+
+[ui.faces]
+png = false
+position_x = 0
+position_y = 80
