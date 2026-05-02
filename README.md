@@ -6,7 +6,8 @@ Display driver and RGB LED plugin for running [jayofelony's Pwnagotchi](https://
 
 ## Preview
 
- <img width="1205" height="740" alt="pwn" src="https://github.com/user-attachments/assets/cc8e3847-ead8-4bc7-b90e-7639f01e8e20" />
+ <img width="1600" height="899" alt="pw" src="https://github.com/user-attachments/assets/b62b47db-48f0-4903-9be1-5e317ed36673" />
+
 
 
 ---
